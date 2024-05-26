@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import SearchBar from "./SearchBar";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <>
+      <header>
+        <img
+          className="nxtWaveLogo"
+          src="/nxtWaveLogo.png"
+          alt="NXT WAVE LOGO"
+        />
+        <button>+ ADD</button>
+        <img className="userIcon" src="/userIcon.png" alt="USER ICON" />
       </header>
-    </div>
+      <div>
+        <nav>
+          <button>Resources</button>
+          <button>Requests</button>
+          <button>Users</button>
+        </nav>
+      </div>
+      <SearchBar />
+      <div className="cardHeader">
+        <img className="cardImgs" src="/boxIcon.png" alt="Box Icon" />
+        <h4 className="cardLabel">Dropbox, Inc.</h4>
+        <h5 className="labelDescription">Cloud Services</h5>
+      </div>
+      <div>
+        <a href="www.dropbox.com">www.dropbox.com</a>
+      </div>
+    </>
   );
 }
 
